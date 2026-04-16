@@ -14,6 +14,25 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Import Backend Logic as ES Module -->
+    <script type="module">
+        import { 
+            Thermodynamics, Statistics, DeviationAnalysis, 
+            DataValidator, DashboardGenerator, ExportUtils,
+            validateTemperature, validatePressure 
+        } from './gas_analysis.js';
+        
+        // Expose to global scope for inline HTML event handlers
+        window.Thermodynamics = Thermodynamics;
+        window.Statistics = Statistics;
+        window.DeviationAnalysis = DeviationAnalysis;
+        window.DataValidator = DataValidator;
+        window.DashboardGenerator = DashboardGenerator;
+        window.ExportUtils = ExportUtils;
+        window.validateTemperature = validateTemperature;
+        window.validatePressure = validatePressure;
+    </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
