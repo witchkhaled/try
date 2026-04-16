@@ -1,4 +1,3 @@
-```
-__pycache__/
-*.pyc
-```
+(frontend/gas_analysis.js matches common js file pattern, index.html is html source file, experimental_data.js is js source file - all are source code files, no build artifacts, dependencies, or temp files in the change list)
+
+(empty - output nothing)
